@@ -1,0 +1,6 @@
+.table-sortable[data-sortdirection="asc"] .active {
+  outline: 1px solid red;
+}
+.table-sortable[data-sortdirection="desc"] .active {
+  outline: 1px solid green;
+}
