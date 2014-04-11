@@ -1,6 +1,17 @@
-.table-sortable[data-sortdirection="asc"] .active {
-  outline: 1px solid red;
+.container .table>thead>tr>th {
+  background: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
-.table-sortable[data-sortdirection="desc"] .active {
-  outline: 1px solid green;
+.table-sortable th:after {
+  content: " \25BD \25B3";
+}
+.table-sortable[data-sortdirection="asc"] .active:after {
+  content: " \25BC \25B3";
+}
+.table-sortable[data-sortdirection="desc"] .active:after {
+  content: " \25BD \25B2";
 }
