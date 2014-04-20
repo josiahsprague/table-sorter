@@ -9,7 +9,7 @@ var SortableTable = {
     this.userInteraction();
   },
 
-  //Convert the table into a JSON object
+  //Convert the table into an array
   readTableData: function (table) {
     var rowLength, cellLength, columnHeaders, tableData, rowCellLength, tableRow, rowData, i, j;
     rowLength = table.rows.length;
@@ -60,7 +60,7 @@ var SortableTable = {
     }, false);
   },
 
-  //Sort the JSON table in memory
+  //Sort the table array in memory
   rowSort: function (direction) {
     var newRows, cellIndex, rowParent, i;
     newRows = [];
@@ -95,7 +95,7 @@ var SortableTable = {
     return 1;
   },
 
-  //Replace the table table rows from the JSON table
+  //Replace the table rows with the rows from the table array
   updateTable: function (table, newRows) {
     var i;
     for (i = 0; i < newRows.length; i++) {
@@ -104,4 +104,3 @@ var SortableTable = {
   }
 
 };
-//exports.tablesorter = SortableTable;
