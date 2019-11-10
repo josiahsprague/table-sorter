@@ -14,7 +14,6 @@ var SortableTable = {
     var rowLength, cellLength, columnHeaders, tableData, rowCellLength, tableRow, rowData, i, j;
     rowLength = table.rows.length;
     rowLength = rowLength--;
-    console.log("Rows:", rowLength);
     cellLength = table.rows[0].cells.length;
     columnHeaders = [];
     tableData = [];

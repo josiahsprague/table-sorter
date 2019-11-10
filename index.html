@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Table Sorter</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.14.0.css">
-<script src="//code.jquery.com/qunit/qunit-1.14.0.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <title>Table Sorter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="bootstrap.min.css">
-<link rel="stylesheet" href="tablesort.css">
-<script src="tablesort.js"></script>
-</head>
-<body>
-  <div class="container">
-    <h1>Table Sorter</h1>
-    <p>This is a test page for some table sorting JavaScript I wrote. Interact with this table to see how it works. Click the columns to sort the table. Below the table are some unit tests that verify that the sorter it working correctly. You can find <a href="https://github.com/josiahsprague/table-sorter">the code on GitHub</a>.</p>
-    <table id="sortable-table" class="table table-striped table-hover table-sortable">
-      <thead>
-        <tr>
-          <th>Book</th>
-          <th>Author</th>
-          <th>Year</th>
-          <th>Quantity</th>
-          <th>SKU</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Tale of Two Cities</td>
-          <td>Charles Dickens</td>
-          <td>1859</td>
-          <td>932</td>
-          <td>B84gaw935</td>
-        </tr>
-        <tr>
-          <td>Antes de ser libres</td>
-          <td>Julia Alvarez</td>
-          <td>2004</td>
-          <td>871</td>
-          <td>bE09rtc42</td>
-        </tr>
-        <tr>
-          <td>Stranger in a Strange Land</td>
-          <td>Robert Heinlein</td>
-          <td>1961</td>
-          <td>712</td>
-          <td>0s9q39Da3</td>
-        </tr>
-        <tr>
-          <td>Design Is a Job</td>
-          <td>Mike Monteiro</td>
-          <td>2012</td>
-          <td>124</td>
-          <td>afSAdsw30</td>
-        </tr>
-        <tr>
-          <td>Orthodoxy</td>
-          <td>GK Chesterton</td>
-          <td>1908</td>
-          <td>452</td>
-          <td>gfs933g3K</td>
-        </tr>
-      </tbody>
-    </table>
-    <div id="qunit"></div>
-    <div id="qunit-fixture"></div>
-  </div>
-  <script src="tests.js"></script>
-</body>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-1.14.0.css">
+    <script src="https://code.jquery.com/qunit/qunit-1.14.0.js"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="tablesort.css">
+    <script src="tablesort.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Table Sorter</h1>
+      <p>This is a test page for some table sorting JavaScript I wrote. Interact with this table to see how it works. Click the columns to sort the table. Below the table are some unit tests that verify that the sorter it working correctly. You can find <a href="https://github.com/josiahsprague/table-sorter">the code on GitHub</a>.</p>
+      <table id="sortable-table" class="table table-striped table-hover table-sortable">
+        <thead>
+          <tr>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Year</th>
+            <th>Quantity</th>
+            <th>SKU</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tale of Two Cities</td>
+            <td>Charles Dickens</td>
+            <td>1859</td>
+            <td>932</td>
+            <td>B84gaw935</td>
+          </tr>
+          <tr>
+            <td>Antes de ser libres</td>
+            <td>Julia Alvarez</td>
+            <td>2004</td>
+            <td>871</td>
+            <td>bE09rtc42</td>
+          </tr>
+          <tr>
+            <td>Stranger in a Strange Land</td>
+            <td>Robert Heinlein</td>
+            <td>1961</td>
+            <td>712</td>
+            <td>0s9q39Da3</td>
+          </tr>
+          <tr>
+            <td>Design Is a Job</td>
+            <td>Mike Monteiro</td>
+            <td>2012</td>
+            <td>124</td>
+            <td>afSAdsw30</td>
+          </tr>
+          <tr>
+            <td>Orthodoxy</td>
+            <td>GK Chesterton</td>
+            <td>1908</td>
+            <td>452</td>
+            <td>gfs933g3K</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="qunit"></div>
+      <div id="qunit-fixture"></div>
+    </div>
+    <script src="tests.js"></script>
+  </body>
+
 </html>
